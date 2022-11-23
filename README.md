@@ -45,6 +45,12 @@ kubectl apply -f config-map-aws-auth.yaml
 ```
 kubectl get nodes
 ```
+## If you get an error run the below command to upgrade your awscli
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
 
 ## Destroy
 Make sure all the resources created by Kubernetes are removed (LoadBalancers, Security groups), and issue:
