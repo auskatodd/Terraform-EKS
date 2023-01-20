@@ -52,15 +52,8 @@ unzip awscliv2.zip
 sudo ./aws/install
 ```
 option 2:
-diff ~/.kube/config ~/.kube/config-backup
-691c691
-<             apiVersion: client.authentication.k8s.io/v1beta1
----
->             apiVersion: client.authentication.k8s.io/v1alpha1
-```
 Change v1alpha1 to v1beta1:
 
-```
 
 ## Destroy
 Make sure all the resources created by Kubernetes are removed (LoadBalancers, Security groups), and issue:
